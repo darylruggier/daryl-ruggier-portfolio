@@ -1,0 +1,20 @@
+.portfolio {
+  .content_header {
+    text-align: center;
+    margin: 50px auto;
+    .name {
+      font-size: 3em;
+      font-weight: 400;
+      line-height: 40px;
+      &:hover {
+        color: orange;
+        cursor: pointer;
+      }
+    }
+    .desc {
+      font-weight: 300;
+      color: #96979c;
+      line-height: 0;
+    }
+  }
+}
