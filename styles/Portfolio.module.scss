@@ -14,7 +14,15 @@
     .desc {
       font-weight: 300;
       color: #96979c;
-      line-height: 0;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .portfolio {
+    .desc {
+      font-size: 1.2em;
     }
   }
 }

@@ -1,0 +1,20 @@
+.nav {
+  height: 50px;
+  border-bottom: 1px solid black;
+  position: sticky;
+  &_left {
+    width: 10%;
+    height: 50px;
+    padding-left: 10px;
+  }
+  &_icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav_left {
+    padding-left: 40px;
+  }
+}

@@ -13,3 +13,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* next-themes */
+:root {
+  /* Default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+}

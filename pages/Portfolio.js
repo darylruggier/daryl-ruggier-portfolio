@@ -1,8 +1,10 @@
 import Navbar from "../components/navbar/Navbar";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const Portfolio = () => {
+  const { theme, setTheme } = useTheme("light");
   return (
     <div className={styles.portfolio}>
       <div className={styles.navbar}>
@@ -16,6 +18,9 @@ const Portfolio = () => {
           <h2 className={styles.desc}>
             Frontend Developer & Computer Science Student
           </h2>
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          ></button>
         </div>
       </div>
     </div>
