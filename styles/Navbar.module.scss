@@ -1,7 +1,8 @@
 .nav {
   height: 50px;
-  border-bottom: 1px solid black;
   position: sticky;
+  display: flex;
+  justify-content: space-between;
   &_left {
     width: 10%;
     height: 50px;
@@ -11,6 +12,17 @@
     display: flex;
     position: relative;
     top: 25%;
+  }
+  &_right {
+    width: 10%;
+    height: 50px;
+  }
+  .theme_icon {
+    margin: 0 50px;
+    position: relative; /* IMPORTANT FOR TOP TO WORK */
+    top: 25%;
+    i:hover {
+    }
   }
 }
 
