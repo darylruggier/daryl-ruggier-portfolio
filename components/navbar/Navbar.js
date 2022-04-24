@@ -24,7 +24,7 @@ const Navbar = () => {
   // };
 
   return (
-    // TODO: Scroll to top not scrolling fully to the top
+    // TODO: Scroll to top not scrolling fully to the top, "Daryl Ruggier" not showing on start of 2nd div?
     <div className={styles.nav}>
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
