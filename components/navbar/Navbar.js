@@ -1,11 +1,9 @@
 import {
   Sun,
-  MoonStars,
   BrandGithub,
   BrandLinkedin,
   BrandInstagram,
 } from "tabler-icons-react";
-import { ActionIcon } from "@mantine/core";
 import { useTheme } from "next-themes";
 import styles from "../../styles/Navbar.module.scss";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
