@@ -20,6 +20,7 @@
     "react": "18.0.0",
     "react-anchor-link-smooth-scroll-v2": "^2.0.1",
     "react-dom": "18.0.0",
+    "react-hide-on-scroll": "^1.1.4",
     "scss": "^0.2.4",
     "tabler-icons-react": "^1.46.0"
   },

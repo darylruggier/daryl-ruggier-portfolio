@@ -7,6 +7,7 @@ import {
 import { useTheme } from "next-themes";
 import styles from "../../styles/Navbar.module.scss";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
+import { HideOn, HideBetween } from "react-hide-on-scroll";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme("light");
@@ -15,8 +16,15 @@ const Navbar = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
+
   return (
-    //TODO: add "Daryl Ruggier" to navbar when scrolling past first scroll section, and set it to "scroll to top" anchor link
+    // TODO: Scroll to top not scrolling fully to the top
     <div className={styles.nav}>
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
@@ -39,16 +47,23 @@ const Navbar = () => {
             </a>
           </div>
         </div>
+        <HideBetween startDivID="secondscroll" endDivID="thirdscroll" inverse>
+          <div className={styles.nav_left_name}>
+            <AnchorLink href="#nameheader">
+              <p>Daryl Ruggier</p>
+            </AnchorLink>
+          </div>
+        </HideBetween>
       </div>
       <div className={styles.nav_right}>
         <div className={styles.anchorlinks}>
           <div className={styles.anchorlink}>
-            <AnchorLink href="#about">
+            <AnchorLink offset="100" href="#about">
               <h3>About</h3>
             </AnchorLink>
           </div>
           <div className={styles.anchorlink}>
-            <AnchorLink href="#projects">
+            <AnchorLink offset="100" href="#projects">
               <h3>Projects</h3>
             </AnchorLink>
           </div>

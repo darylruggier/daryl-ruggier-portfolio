@@ -8,8 +8,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 const Portfolio = () => {
   //TODO: Populate Projects and About sections, link header name to CV file
   return (
-    <div className={styles.portfolio}>
-      <div className={styles.firstscroll}>
+    <div className={styles.portfolio} id="nameheader">
+      <div className={styles.firstscroll} id="firstscroll">
         <div className={styles.navbar}>
           <Navbar />
         </div>
@@ -24,12 +24,12 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <div className={styles.secondscroll}>
+      <div className={styles.secondscroll} id="secondscroll">
         <div className={styles.projects}>
           <Projects />
         </div>
       </div>
-      <div className={styles.thirdscroll}>
+      <div className={styles.thirdscroll} id="thirdscroll">
         <div className={styles.about}>
           <About />
         </div>

@@ -4,9 +4,22 @@
   display: flex;
   justify-content: space-between;
   &_left {
-    width: 10%;
+    width: 30%;
     height: 50px;
     padding-left: 15px;
+    display: flex;
+    &_name {
+      vertical-align: middle;
+      transform: translateY(-5px);
+      padding-left: 30px;
+      text-align: center;
+      font-size: 20px;
+      cursor: pointer;
+
+      :hover {
+        color: orange;
+      }
+    }
   }
   &_icons {
     display: flex;
