@@ -2,8 +2,10 @@ import Navbar from "../components/navbar/Navbar";
 import Projects from "../components/Projects";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
+import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Portfolio = () => {
+  //TODO: Add about section, other sections needed?
   return (
     <div className={styles.portfolio}>
       <div className={styles.firstscroll}>

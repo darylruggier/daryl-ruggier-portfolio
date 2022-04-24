@@ -1,5 +1,6 @@
 .nav {
   height: 50px;
+  width: 100vw;
   position: sticky;
   display: flex;
   justify-content: space-between;
@@ -20,17 +21,23 @@
     }
   }
   &_right {
+    margin-right: 50px;
+    display: flex;
     width: 10%;
     height: 50px;
   }
   .theme_icon {
-    margin: 0 50px;
+    //margin: 0 50px;
     position: relative; /* IMPORTANT FOR TOP TO WORK */
     top: 25%;
     cursor: pointer;
 
     :hover {
       color: orange;
+    }
+
+    .anchorlinks {
+      display: flex;
     }
   }
 }

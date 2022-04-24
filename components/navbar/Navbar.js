@@ -8,6 +8,7 @@ import {
 import { ActionIcon } from "@mantine/core";
 import { useTheme } from "next-themes";
 import styles from "../../styles/Navbar.module.scss";
+import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme("light");
@@ -17,6 +18,7 @@ const Navbar = () => {
   };
 
   return (
+    //TODO: Make anchor links in navbar flex display
     <div className={styles.nav}>
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
@@ -41,6 +43,14 @@ const Navbar = () => {
         </div>
       </div>
       <div className={styles.nav_right}>
+        <div className={styles.anchorlinks}>
+          <AnchorLink href="#about">
+            <h3>About</h3>
+          </AnchorLink>
+          <AnchorLink href="#projects">
+            <h3>Projects</h3>
+          </AnchorLink>
+        </div>
         <div className={styles.theme_icon} onClick={() => toggleTheme()}>
           <Sun size={30} />
         </div>
