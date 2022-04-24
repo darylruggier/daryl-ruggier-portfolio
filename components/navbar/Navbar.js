@@ -21,15 +21,23 @@ const Navbar = () => {
     <div className={styles.nav}>
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
-          <div className={styles.github_icon}>
-            <BrandGithub size={30} strokeWidth={1.5} />
+          <div className={styles.nav_github_icon}>
+            <a href="https://github.com/darylruggier" target="_blank">
+              <BrandGithub size={30} strokeWidth={1.5} />
+            </a>
           </div>
-
-          <div className={styles.linkedin_icon}>
-            <BrandLinkedin size={30} strokeWidth={1.5} />
+          <div className={styles.nav_linkedin_icon}>
+            <a
+              href="https://www.linkedin.com/in/daryl-ruggier-4204b1208/"
+              target="_blank"
+            >
+              <BrandLinkedin size={30} strokeWidth={1.5} />
+            </a>
           </div>
-          <div className={styles.instagram_icon}>
-            <BrandInstagram size={30} strokeWidth={1.5} />
+          <div className={styles.nav_instagram_icon}>
+            <a href="https://www.instagram.com/ruggierdaryl/" target="_blank">
+              <BrandInstagram size={30} strokeWidth={1.5} />
+            </a>
           </div>
         </div>
       </div>
