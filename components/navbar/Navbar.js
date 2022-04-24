@@ -18,7 +18,6 @@ const Navbar = () => {
   };
 
   return (
-    //TODO: Make anchor links in navbar flex display
     <div className={styles.nav}>
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
@@ -44,12 +43,16 @@ const Navbar = () => {
       </div>
       <div className={styles.nav_right}>
         <div className={styles.anchorlinks}>
-          <AnchorLink href="#about">
-            <h3>About</h3>
-          </AnchorLink>
-          <AnchorLink href="#projects">
-            <h3>Projects</h3>
-          </AnchorLink>
+          <div className={styles.anchorlink}>
+            <AnchorLink href="#about">
+              <h3>About</h3>
+            </AnchorLink>
+          </div>
+          <div className={styles.anchorlink}>
+            <AnchorLink href="#projects">
+              <h3>Projects</h3>
+            </AnchorLink>
+          </div>
         </div>
         <div className={styles.theme_icon} onClick={() => toggleTheme()}>
           <Sun size={30} />

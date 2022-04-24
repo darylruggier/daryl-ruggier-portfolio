@@ -1,7 +1,6 @@
 .nav {
   height: 50px;
   width: 100vw;
-  position: sticky;
   display: flex;
   justify-content: space-between;
   &_left {
@@ -13,6 +12,8 @@
     display: flex;
     position: relative;
     top: 25%;
+    width: 90px;
+    height: 30px;
     cursor: pointer;
 
     :hover,
@@ -21,23 +22,31 @@
     }
   }
   &_right {
-    margin-right: 50px;
+    margin-right: 95px;
     display: flex;
     width: 10%;
     height: 50px;
-  }
-  .theme_icon {
-    //margin: 0 50px;
-    position: relative; /* IMPORTANT FOR TOP TO WORK */
-    top: 25%;
-    cursor: pointer;
-
-    :hover {
-      color: orange;
-    }
 
     .anchorlinks {
       display: flex;
+      .anchorlink {
+        padding-left: 25px;
+        transform: translateX(-100px);
+      }
+      :hover {
+        color: orange;
+      }
+    }
+
+    .theme_icon {
+      //margin: 0 50px;
+      position: relative; /* IMPORTANT FOR TOP TO WORK */
+      top: 25%;
+      cursor: pointer;
+
+      :hover {
+        color: orange;
+      }
     }
   }
 }

@@ -3,13 +3,22 @@
     height: 100vh;
   }
 
+  .navbar {
+    top: 0;
+    position: fixed;
+  }
+
   .secondscroll {
+    height: 100vh;
+  }
+
+  .thirdscroll {
     height: 100vh;
   }
 
   .content_header {
     text-align: center;
-    margin: 50px auto;
+    margin: 102px auto;
     .name {
       font-size: 3em;
       font-weight: 400;

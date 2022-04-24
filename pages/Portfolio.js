@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar/Navbar";
 import Projects from "../components/Projects";
+import About from "../components/About";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
@@ -26,6 +27,11 @@ const Portfolio = () => {
       <div className={styles.secondscroll}>
         <div className={styles.projects}>
           <Projects />
+        </div>
+      </div>
+      <div className={styles.thirdscroll}>
+        <div className={styles.about}>
+          <About />
         </div>
       </div>
     </div>

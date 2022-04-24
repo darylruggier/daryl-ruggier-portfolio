@@ -3,6 +3,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto Mono", monospace;
+  background: #fff;
+  color: #000;
 }
 
 a {
@@ -14,14 +16,10 @@ a {
   box-sizing: border-box;
 }
 
-/* next-themes */
-:root {
-  /* Default theme */
-  --background: white;
-  --foreground: black;
-}
+// /* next-themes */
 
-[data-theme="dark"] {
-  --background: black;
-  --foreground: white;
+[data-theme="dark"],
+[data-theme="dark"] body {
+  color: #fff;
+  background: #000;
 }
