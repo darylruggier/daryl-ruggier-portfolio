@@ -6,7 +6,7 @@ import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Portfolio = () => {
-  //TODO: Add about section, other sections needed?
+  //TODO: Populate Projects and About sections, link header name to CV file
   return (
     <div className={styles.portfolio}>
       <div className={styles.firstscroll}>

@@ -18,6 +18,7 @@ const Navbar = () => {
   };
 
   return (
+    //TODO: add "Daryl Ruggier" to navbar when scrolling past first scroll section, and set it to "scroll to top" anchor link
     <div className={styles.nav}>
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
