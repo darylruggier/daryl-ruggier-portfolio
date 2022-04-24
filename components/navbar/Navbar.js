@@ -17,7 +17,6 @@ const Navbar = () => {
   };
 
   return (
-    // TODO: Navbar icon colour to orange on hover
     <div className={styles.nav}>
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
