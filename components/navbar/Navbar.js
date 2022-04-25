@@ -29,7 +29,11 @@ const Navbar = () => {
       <div className={styles.nav_left}>
         <div className={styles.nav_icons}>
           <div className={styles.nav_github_icon}>
-            <a href="https://github.com/darylruggier" target="_blank">
+            <a
+              href="https://github.com/darylruggier"
+              target="_blank"
+              rel="noopener"
+            >
               <BrandGithub size={30} strokeWidth={1.5} />
             </a>
           </div>
@@ -37,12 +41,17 @@ const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/daryl-ruggier-4204b1208/"
               target="_blank"
+              rel="noopener"
             >
               <BrandLinkedin size={30} strokeWidth={1.5} />
             </a>
           </div>
           <div className={styles.nav_instagram_icon}>
-            <a href="https://www.instagram.com/ruggierdaryl/" target="_blank">
+            <a
+              href="https://www.instagram.com/ruggierdaryl/"
+              target="_blank"
+              rel="noopener"
+            >
               <BrandInstagram size={30} strokeWidth={1.5} />
             </a>
           </div>
