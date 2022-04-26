@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 import styles from "../../styles/Navbar.module.scss";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 import { HideOn, HideBetween } from "react-hide-on-scroll";
+import { Link } from "next/link";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme("light");
@@ -56,29 +57,37 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        <HideBetween startDivID="secondscroll" endDivID="thirdscroll" inverse>
+        <HideOn divID="firstscroll" inverse>
           <div className={styles.nav_left_name}>
-            <AnchorLink href="#nameheader">
-              <p>Daryl Ruggier</p>
-            </AnchorLink>
+            <p
+              onClick={() =>
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              Daryl Ruggier
+            </p>
           </div>
-        </HideBetween>
+        </HideOn>
       </div>
       <div className={styles.nav_right}>
         <div className={styles.anchorlinks}>
-          <div className={styles.anchorlink}>
-            <AnchorLink offset="100" href="#about">
-              <h3>About</h3>
-            </AnchorLink>
-          </div>
           <div className={styles.anchorlink}>
             <AnchorLink offset="100" href="#projects">
               <h3>Projects</h3>
             </AnchorLink>
           </div>
+          <div className={styles.anchorlink}>
+            <AnchorLink offset="100" href="#about">
+              <h3>About</h3>
+            </AnchorLink>
+          </div>
         </div>
-        <div className={styles.theme_icon} onClick={() => toggleTheme()}>
-          <Sun size={30} />
+        <div className={styles.theme_icon}>
+          <Sun size={30} onClick={() => toggleTheme()} />
         </div>
       </div>
     </div>

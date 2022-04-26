@@ -55,7 +55,10 @@
       //margin: 0 50px;
       position: relative; /* IMPORTANT FOR TOP TO WORK */
       top: 25%;
-      cursor: pointer;
+
+      svg {
+        cursor: pointer;
+      }
 
       :hover {
         color: orange;
