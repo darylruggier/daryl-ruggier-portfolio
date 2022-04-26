@@ -1,0 +1,14 @@
+.project {
+  width: 25vw;
+  height: 25vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    transform: scale(0.98);
+  }
+  &_header {
+    text-align: center;
+    font-size: 12px;
+  }
+}
