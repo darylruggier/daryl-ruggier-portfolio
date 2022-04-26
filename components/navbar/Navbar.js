@@ -32,7 +32,7 @@ const Navbar = () => {
             <a
               href="https://github.com/darylruggier"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <BrandGithub size={30} strokeWidth={1.5} />
             </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/daryl-ruggier-4204b1208/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <BrandLinkedin size={30} strokeWidth={1.5} />
             </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <a
               href="https://www.instagram.com/ruggierdaryl/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <BrandInstagram size={30} strokeWidth={1.5} />
             </a>

@@ -3,10 +3,11 @@ import Projects from "../components/Projects";
 import About from "../components/About";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
-import AnchorLink from "react-anchor-link-smooth-scroll-v2";
+import pdf from "./static/Daryl_Ruggier_CV.pdf";
 
 const Portfolio = () => {
-  //TODO: Populate Projects and About sections, link header name to CV file
+  //TODO: Populate Projects and About sections
+  //TODO: Fix PDF not loading (use react-pdf?)
   return (
     <div className={styles.portfolio} id="nameheader">
       <div className={styles.firstscroll} id="firstscroll">
@@ -16,7 +17,9 @@ const Portfolio = () => {
         <div className={styles.content}>
           <div className={styles.content_header}>
             <Link href="/cv">
-              <a className={styles.name}>Daryl Ruggier</a>
+              <a className={styles.name} href={pdf} target="_blank">
+                Daryl Ruggier
+              </a>
             </Link>
             <h2 className={styles.desc}>
               Frontend Developer & Computer Science Student
