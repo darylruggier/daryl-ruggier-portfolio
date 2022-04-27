@@ -17,7 +17,12 @@ const Portfolio = () => {
         <div className={styles.content}>
           <div className={styles.content_header}>
             <Link href="/cv">
-              <a className={styles.name} href={pdf} target="_blank">
+              <a
+                className={styles.name}
+                href={pdf}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Daryl Ruggier
               </a>
             </Link>
