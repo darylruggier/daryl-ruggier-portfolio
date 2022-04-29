@@ -1,9 +1,11 @@
 import styles from "../styles/Projects.module.scss";
 import Project from "./Project.js";
+import { Modal } from "@mantine/core";
+import { useState } from "react";
 
 const Projects = () => {
-  //TODO: Fix project modal not closing when clicking outside of it
   //TODO: Put pictures on project cards
+  const [open, setOpen] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.header}>

@@ -17,13 +17,7 @@ const Navbar = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
-
+  // TODO: Make theme button show on small screen
   return (
     <div className={styles.nav}>
       <div className={styles.nav_left}>
