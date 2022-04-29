@@ -1,4 +1,5 @@
 .portfolio {
+  height: 100vh;
   .firstscroll {
     height: 100vh;
   }
@@ -32,14 +33,21 @@
       font-weight: 300;
       color: #96979c;
       line-height: 1rem;
+
+      @media (max-width: 800px) {
+        font-size: 1.2em;
+      }
     }
   }
-}
 
-@media (max-width: 800px) {
-  .portfolio {
-    .desc {
-      font-size: 1.2em;
+  .scrolltotopbutton {
+    display: none;
+    position: fixed;
+
+    @media (max-width: 800) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
     }
   }
 }

@@ -1,4 +1,6 @@
 .container {
+  height: 100vh;
+  overflow: auto;
   .header {
     margin: 50px auto;
     text-align: center;
@@ -17,7 +19,8 @@
     }
 
     @media (max-width: 800px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+      row-gap: 25px;
     }
   }
 }

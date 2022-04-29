@@ -25,7 +25,7 @@
     "react-dom": "18.0.0",
     "react-hide-on-scroll": "^1.1.4",
     "scss": "^0.2.4",
-    "tabler-icons-react": "^1.46.0"
+    "tabler-icons-react": "^1.47.0"
   },
   "devDependencies": {
     "eslint": "8.13.0",

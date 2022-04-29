@@ -4,10 +4,12 @@ import About from "../components/About";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
 import pdf from "./static/Daryl_Ruggier_CV.pdf";
+import { ArrowBigTop } from "tabler-icons-react";
 
 const Portfolio = () => {
   //TODO: Populate Projects and About sections
   //TODO: Fix PDF not loading (use react-pdf?)
+  //TODO: Make scroll to top arrow for small screens show
   return (
     <div className={styles.portfolio} id="nameheader">
       <div className={styles.firstscroll} id="firstscroll">
@@ -31,6 +33,20 @@ const Portfolio = () => {
             </h2>
           </div>
         </div>
+      </div>
+      <div className={styles.scrolltotopbutton}>
+        <ArrowBigTop
+          size={60}
+          strokeWidth={2}
+          color={"black"}
+          onClick={() =>
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            })
+          }
+        />
       </div>
       <div className={styles.secondscroll} id="secondscroll">
         <div className={styles.projects}>
