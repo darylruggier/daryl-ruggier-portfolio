@@ -3,7 +3,7 @@ import Projects from "./Projects";
 import About from "./About";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
-import pdf from "./static/Daryl_Ruggier_CV.pdf";
+// import pdf from "./static/Daryl_Ruggier_CV.pdf";
 import { ArrowBigTop } from "tabler-icons-react";
 
 const Portfolio = () => {
