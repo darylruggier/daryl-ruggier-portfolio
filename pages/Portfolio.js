@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar/Navbar";
-import Projects from "../components/Projects";
-import About from "../components/About";
+import Projects from "./Projects";
+import About from "./About";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
 import pdf from "./static/Daryl_Ruggier_CV.pdf";
@@ -21,7 +21,7 @@ const Portfolio = () => {
             <Link href="/cv">
               <a
                 className={styles.name}
-                href={pdf}
+                // href={pdf}
                 target="_blank"
                 rel="noreferrer noopener"
               >
