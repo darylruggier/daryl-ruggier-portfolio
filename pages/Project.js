@@ -10,17 +10,14 @@ const Project = ({ title, projectImg, linkToProject, projectDescription }) => {
         withCloseButton={false}
         opened={open}
         onClose={() => setOpen(false)}
-        title="Introduce yourself!"
       >
-        {projectDescription}
+        <p>{projectDescription}</p>
       </Modal>
       <div className={styles.project} onClick={() => setOpen(true)}>
         <div className={styles.project_header}>
           <h1>{title}</h1>
         </div>
-        <div className={styles.project_desc}>
-          <p>{projectDescription}</p>
-        </div>
+        <div className={styles.project_body}></div>
       </div>
     </div>
   );

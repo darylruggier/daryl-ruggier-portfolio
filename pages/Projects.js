@@ -14,22 +14,22 @@ const Projects = () => {
       </div>
       <div className={styles.gridcontainer}>
         <div className={styles.project_1}>
-          <Project title="Project" />
+          <Project title="Investify" />
         </div>
         <div className={styles.project_2}>
-          <Project title="Project2" />
+          <Project title="React & Angular Task Tracker" />
         </div>
         <div className={styles.project_3}>
-          <Project title="Project3" />
+          <Project title="React LinkedIn Clone" />
         </div>
         <div className={styles.project_4}>
-          <Project title="Projec4t" />
+          <Project title="Linux Shell in C" />
         </div>
         <div className={styles.project_5}>
-          <Project title="Projec4t" />
+          <Project title="University OOP Project" />
         </div>
         <div className={styles.project_6}>
-          <Project title="Projec4t" />
+          <Project title="Springboot Test Project" />
         </div>
       </div>
     </div>
