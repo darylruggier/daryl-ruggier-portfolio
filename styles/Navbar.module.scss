@@ -3,11 +3,19 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
+
   &_left {
     width: 30%;
     height: 50px;
     padding-left: 15px;
     display: flex;
+
+    @media (max-width: 800px) {
+      svg {
+        width: 90%;
+      }
+    }
+
     &_name {
       vertical-align: middle;
       transform: translateY(-5px);
@@ -52,6 +60,10 @@
       }
       :hover {
         color: orange;
+      }
+
+      @media (max-width: 800px) {
+        font-size: 14px;
       }
     }
 
