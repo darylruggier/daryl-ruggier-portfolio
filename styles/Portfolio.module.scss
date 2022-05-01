@@ -11,10 +11,18 @@
 
   .secondscroll {
     height: 100vh;
+
+    @media (max-width: 800px) {
+      font-size: 12px;
+    }
   }
 
   .thirdscroll {
     height: 100vh;
+
+    @media (max-width: 800px) {
+      font-size: 12px;
+    }
   }
 
   .content_header {
