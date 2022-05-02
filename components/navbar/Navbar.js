@@ -1,5 +1,6 @@
 import {
   Sun,
+  Moon,
   BrandGithub,
   BrandLinkedin,
   BrandInstagram,
@@ -80,7 +81,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className={styles.theme_icon}>
-          <Sun size={30} onClick={() => toggleTheme()} />
+          {theme === "dark" ? (
+            <Sun size={30} onClick={() => toggleTheme()} />
+          ) : (
+            <Moon size={30} onClick={() => toggleTheme()} />
+          )}
         </div>
       </div>
     </div>
