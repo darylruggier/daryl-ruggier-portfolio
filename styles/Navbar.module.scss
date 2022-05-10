@@ -10,7 +10,7 @@
     padding-left: 15px;
     display: flex;
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       svg {
         width: 90%;
       }
@@ -24,7 +24,7 @@
       font-size: 20px;
       cursor: pointer;
 
-      @media (max-width: 800px) {
+      @media (max-width: 600px) {
         display: none;
       }
 
@@ -62,7 +62,7 @@
         color: orange;
       }
 
-      @media (max-width: 800px) {
+      @media (max-width: 600px) {
         font-size: 14px;
       }
     }
@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .nav_left {
     padding-left: 20px;
   }
