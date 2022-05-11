@@ -21,8 +21,7 @@ const About = () => {
           <a
             href="https://github.com/darylruggier/"
             target="_blank"
-            noopener
-            noreferrer
+            rel="noopener noreferrer"
           >
             here
           </a>
