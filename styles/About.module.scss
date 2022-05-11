@@ -5,4 +5,29 @@
     text-align: center;
     font-size: 2em;
   }
+
+  .body {
+    transform: translateY(-10px);
+    width: 50vw;
+    height: 50vh;
+    font-family: Workhorse, sans-serif;
+    margin: auto;
+
+    h1 {
+      font-size: 36px;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 27px;
+      padding-bottom: 8px;
+    }
+
+    a {
+      &:hover {
+        color: orange;
+        text-decoration-style: wavy;
+      }
+    }
+  }
 }
