@@ -7,7 +7,6 @@ import Link from "next/link";
 import { ArrowBigTop } from "tabler-icons-react";
 
 const Portfolio = () => {
-  //TODO: Populate Projects and About sections
   //TODO: Fix PDF not loading (use react-pdf?)
   //TODO: Make scroll to top arrow for small screens show
   return (
@@ -49,13 +48,13 @@ const Portfolio = () => {
         />
       </div>
       <div className={styles.secondscroll} id="secondscroll">
-        <div className={styles.projects}>
-          <Projects />
+        <div className={styles.about}>
+          <About />
         </div>
       </div>
       <div className={styles.thirdscroll} id="thirdscroll">
-        <div className={styles.about}>
-          <About />
+        <div className={styles.projects}>
+          <Projects />
         </div>
       </div>
     </div>

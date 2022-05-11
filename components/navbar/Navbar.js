@@ -70,13 +70,13 @@ const Navbar = () => {
       <div className={styles.nav_right}>
         <div className={styles.anchorlinks}>
           <div className={styles.anchorlink}>
-            <AnchorLink offset="90" href="#projects">
-              <h3>Projects</h3>
+            <AnchorLink offset="90" href="#about">
+              <h3>About</h3>
             </AnchorLink>
           </div>
           <div className={styles.anchorlink}>
-            <AnchorLink offset="90" href="#about">
-              <h3>About</h3>
+            <AnchorLink offset="90" href="#projects">
+              <h3>Projects</h3>
             </AnchorLink>
           </div>
         </div>
