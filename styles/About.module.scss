@@ -24,9 +24,10 @@
     }
 
     a {
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
       &:hover {
         color: orange;
-        text-decoration-style: wavy;
       }
     }
   }
