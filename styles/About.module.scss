@@ -30,5 +30,10 @@
         color: orange;
       }
     }
+
+    @media (max-width: 700px) {
+      display: block;
+      width: 85vw;
+    }
   }
 }
