@@ -85,6 +85,16 @@
 
 @media (max-width: 600px) {
   .nav_left {
-    padding-left: 20px;
+    padding-left: 10px;
+  }
+
+  .nav_right {
+    margin-left: 30px;
+    padding-left: 80px;
+    width: 62%;
+
+    .theme_icon {
+      transform: translateX(-55px);
+    }
   }
 }
