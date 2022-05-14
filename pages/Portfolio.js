@@ -3,7 +3,6 @@ import Projects from "./Projects";
 import About from "./About";
 import styles from "../styles/Portfolio.module.scss";
 import Link from "next/link";
-// import pdf from "./static/Daryl_Ruggier_CV.pdf";
 import { ArrowBigTop } from "tabler-icons-react";
 
 const Portfolio = () => {
@@ -18,12 +17,7 @@ const Portfolio = () => {
         <div className={styles.content}>
           <div className={styles.content_header}>
             <Link href="/cv">
-              <a
-                className={styles.name}
-                // href={pdf}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
+              <a className={styles.name} rel="noreferrer noopener">
                 Daryl Ruggier
               </a>
             </Link>
