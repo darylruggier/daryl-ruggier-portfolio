@@ -7,7 +7,6 @@ import { ArrowBigTop } from "tabler-icons-react";
 
 const Portfolio = () => {
   //TODO: Fix PDF not loading (use react-pdf?)
-  //TODO: Make scroll to top arrow for small screens show
   return (
     <div className={styles.portfolio} id="nameheader">
       <div className={styles.firstscroll} id="firstscroll">
