@@ -6,13 +6,12 @@
 <style>
 	.title {
 		display: flex;
-		justify-items: center;
+		justify-content: center;
 		height: auto;
 		padding: 10px 0 0 0;
 		margin: 80px 0 0 0;
 		font-size: 3em;
 		font-weight: 400;
-		padding-left: 1.7rem;
 	}
 
 	.title > a {

@@ -44,6 +44,7 @@
 	* {
 		height: 100vh;
 		font-family: 'Inconsolata', monospace;
+		overflow: scroll;
 	}
 
 	.top {
@@ -62,6 +63,7 @@
 		display: flex;
 		width: 100vw;
 		height: 7vh;
+		position: sticky;
 	}
 
 	nav > a {
