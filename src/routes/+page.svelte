@@ -4,7 +4,8 @@
 
 <div class="w-screen h-screen flex flex-col items-center">
     <div class="flex flex-col">
-        <h1 class="h1 mx-auto mt-48 mb-8 self-center">Daryl Ruggier</h1>
+        <h1 class="h1 mx-auto mt-16 md:mt-48 mb-4 self-center">Daryl Ruggier</h1>
+        <h2 class="h5 mx-auto mb-4 self-center">Junior Software Engineer</h2>
         <div class="flex items-center justify-center gap-2">
             <a href="mailto:daryl.ruggier@gmail.com">
                 <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="3" y="5" width="18" height="14" rx="2" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></rect> </g></svg>
@@ -16,11 +17,11 @@
                 <svg class="h-8 w-8" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="132" height="132" x="30" y="30" stroke="#ffffff" stroke-width="12" rx="16"></rect><path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M66 86v44"></path><circle cx="66" cy="64" r="8" fill="#ffffff"></circle><path stroke="#ffffff" stroke-linecap="round" stroke-width="12" d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26"></path></g></svg>
             </a>
         </div>
-        <div class="grid grid-cols-1 grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 mt-32 gap-4 mx-16 xl:mx-32 2xl:mx-64 2xl:gap-6">
+        <div class="grid grid-flow-row xl:grid-flow-col-dense mt-16 md:mt-32 pb-4 gap-4 mx-4 md:mx-16 xl:mx-32 2xl:mx-64 2xl:gap-6 justify-center">
             <ProjectCard title="Portfolio Website" description="Initially developed a personal portfolio using Next.js and SCSS, showcasing professional achievements and skills. Subsequently,  a second version was developed, utilizing SvelteKit, TailwindCSS, and the Skeleton UI library. The updated version offers a modern and visually appealing user interface, highlighting projects, work experience, and contact information. The responsive design ensures optimal viewing across various devices, enhancing the overall user experience." technologiesUsed={["Svelte", "Tailwind"]}/>
             <ProjectCard title="Red Bull Clone Website" description="Developed a robust web application using Next.js, integrating frontend and backend functionalities such as login, register, profile, and forgot password pages. Auth.js was employed for secure authentication, while PlanetScale ensured scalability and security for the database. Prisma facilitated smooth communication between API endpoints and the database. Zod enhanced endpoint type safety, and TailwindCSS provided an efficient developer experience for website styling. The application was successfully deployed on Vercel for seamless accessibility." technologiesUsed={["Next.js", "Tailwind", "Prisma", "PlanetScale", "Zod", "Vercel"]}/>
-            <ProjectCard title="Title" description="aiosdjaiosjdoiasjdioj" />
-
+            <ProjectCard title="Package Tracker Telegram Bot" description="Developed a script in Node.js, which tracks the status of any package I ordered, sending a message via Telegram when the status is updated. The script is executed as a cron job through Firebase Cloud Functions." technologiesUsed={["Node.js", "Firebase", "Telegram Bot API"]}/>
+            <ProjectCard title="Gym Booking Automation Script" description="Developed a simple Node.js script which books specific time slots automatically. The GymMaster API is used to fetch booking information as well as book the time slots. The script is automatically ran using a cron job, through Firebase Cloud Functions." technologiesUsed={["Node.js", "Firebase", "GymMaster API"]}/>
         </div>
     </div>
 </div>
